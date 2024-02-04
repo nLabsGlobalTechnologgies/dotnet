@@ -8,8 +8,10 @@ namespace DependencyInjection.Controllers;
 [ApiController]
 public class CalculatorsController : ControllerBase
 {
+    //new keywordü bir classı bir objeye dönüştürür. Bu Dönüştürme işlemine instance türetme denir.
     // Calculator sınıfının bir örneği private olarak tanımlanır.
     private readonly Calculator _calculator;
+    private readonly A _a;
 
     // Constructor aracılığıyla Calculator örneği alınır.
     public CalculatorsController(Calculator calculator)
@@ -27,5 +29,20 @@ public class CalculatorsController : ControllerBase
 
         // Sonuç, HTTP 200 OK yanıtı ile birlikte döndürülür.
         return Ok(result);
+    }
+}
+
+public class A
+{
+    private readonly Calculator _calculator;
+    public A(Calculator calculator)
+    {
+        _calculator = calculator;
+    }
+    public int Metot()
+    {
+
+        var result = _calculator.Add(5, 10);
+        return result;
     }
 }

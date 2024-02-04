@@ -1,15 +1,33 @@
 ﻿namespace DependencyInjection;
 
-// Calculator sınıfı, basit bir toplama işlemi gerçekleştiren bir sınıftır.
 public class Calculator
 {
-    // Plus metodu, iki sayıyı toplar ve sonucu döndürür.
-    internal int Plus(int firstNumber, int secondNumber)
+    public int Total { get; set; }
+    public Calculator()
     {
-        // Toplama işlemi gerçekleştirilir.
-        int result = firstNumber + secondNumber;
 
-        // Toplam sonucu döndürülür.
-        return result;
+    }
+
+    public int Plus(int firstNumber, int secondNumber)
+    {
+        return firstNumber + secondNumber;
+    }
+
+    public int Add(int firstNumber, int secondNumber)
+    {
+        Total += firstNumber + secondNumber;
+        return Total;
+    }
+
+    public int Subtract(int firstNumber, int secondNumber)
+    {
+        return firstNumber - secondNumber;
     }
 }
+
+
+//Erişim belirleyiciler | Access Modifier
+//public => herkes tarafından kullanılabilmesini sağlar
+//private => Sadece kendi içerisinde kullanılabilmesini sağlar
+//internal => sadece aynı katmanda kullanılabilmesini sağlar | Bu kısmı detaylı  açıklayacağım
+//protected => sadece interit edenlerin kullanabilmesini sağlar
