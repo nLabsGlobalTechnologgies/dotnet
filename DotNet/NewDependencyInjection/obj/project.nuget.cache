@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VMk9XTrb4E/YAFL6Bsxll7omgKEDugDhxOY5KdLzLQPflS0xrUH34xahCaVgVC+mEXX3nqYWphDCN2YfZ+SYMw==",
+  "dgSpecHash": "w3SZl0yBfh32IjWkoNfPdKzKhXminvEZSsi3hzyYTs6DEcpXgLoivRuCfrwc5Zb9SStJKaBIcwVMFCt1ywxmkw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\dotnet\\DotNet\\NewDependencyInjection\\NewDependencyInjection.csproj",
   "expectedPackageFiles": [

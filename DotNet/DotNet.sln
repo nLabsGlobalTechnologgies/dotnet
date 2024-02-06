@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnModelCreating", "OnModelC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transaction", "Transaction\Transaction.csproj", "{179DE849-96F3-482B-BB80-495DD930966E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandler", "ExceptionHandler\ExceptionHandler.csproj", "{5C3E0DAA-05CE-424C-94B4-17835A750700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandler", "ExceptionHandler\ExceptionHandler.csproj", "{5C3E0DAA-05CE-424C-94B4-17835A750700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce", "eCommerce\eCommerce.csproj", "{121B1A04-972B-4245-BEBD-114FA9D551D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,10 @@ Global
 		{5C3E0DAA-05CE-424C-94B4-17835A750700}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C3E0DAA-05CE-424C-94B4-17835A750700}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C3E0DAA-05CE-424C-94B4-17835A750700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{121B1A04-972B-4245-BEBD-114FA9D551D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121B1A04-972B-4245-BEBD-114FA9D551D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121B1A04-972B-4245-BEBD-114FA9D551D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121B1A04-972B-4245-BEBD-114FA9D551D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +129,7 @@ Global
 		{8F46898F-73E3-403B-BFC1-A79D18203237} = {640B70D0-A8C2-4EBB-B032-45C95490CA56}
 		{179DE849-96F3-482B-BB80-495DD930966E} = {640B70D0-A8C2-4EBB-B032-45C95490CA56}
 		{5C3E0DAA-05CE-424C-94B4-17835A750700} = {640B70D0-A8C2-4EBB-B032-45C95490CA56}
+		{121B1A04-972B-4245-BEBD-114FA9D551D9} = {640B70D0-A8C2-4EBB-B032-45C95490CA56}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65D91989-3B91-42BC-949D-34C4C73A6E4B}
