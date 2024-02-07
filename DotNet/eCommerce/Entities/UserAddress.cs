@@ -1,9 +1,10 @@
-﻿namespace eCommerce.Entities;
+﻿using eCommerce.Abstractions;
 
-public sealed class UserAddress
+namespace eCommerce.Entities;
+
+public sealed class UserAddress : Entity
 {
     public Guid UserId { get; set; }
-    public AppUser? User { get; set; }
-    public Guid AddressId { get; set; }
-    public Address? Address { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string? Description { get; set; }
 }
