@@ -59,7 +59,7 @@ public class HomeController : ApiController
             Price = p.Price,
 
             // Kategori bilgilerini de bir anonim nesne içinde düzenle.
-            Category category = new
+            Category new
             {
                 CategoryId = p.Category?.Id,
                 CategoryName = p.Category?.Name,
