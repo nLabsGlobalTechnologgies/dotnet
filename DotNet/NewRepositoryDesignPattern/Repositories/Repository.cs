@@ -3,13 +3,13 @@ using NewRepositoryDesignPattern.Interfaces;
 
 namespace NewRepositoryDesignPattern.Repositories;
 
-public class Repository<T>(AppDbContext context) : IRepository<T>
+public class Repository<T>(AppDbContext context, IUnitOfWork unitOfWork) : IRepository<T>
     where T : class
 {
     public void Add(T entity)
     {
         context.Set<T>().Add(entity);
-        context.SaveChanges();
+        unitOfWork.SaveChanges();
     }
 
     public void Update(T entity)
