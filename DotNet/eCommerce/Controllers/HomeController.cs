@@ -48,7 +48,7 @@ public class HomeController : ApiController
     {
         // Veritabanından ürünleri çek, aynı zamanda ilişkili kategori bilgilerini de getir.
         var products = _context.Products.Include(p => p.Category).ToList();
-
+    
         // Her bir ürünü, yalnızca ilgili özellikleri içerecek şekilde bir anonim nesne içinde düzenle.
         var productsWithCategory = products.Select(p => new
         {
@@ -57,18 +57,19 @@ public class HomeController : ApiController
             Quantity = p.Quantity,
             Discount = p.Discount,
             Price = p.Price,
-
-            // Kategori bilgilerini de bir anonim nesne içinde düzenle.
+    
+            // Kategori bilgilerini doğru bir şekilde oluşturun ve değerleri atayın.
             Category = new
             {
-                p.Category?.Id,
-                p.Category?.Name,
-                p.Category?.Icon,
-                p.Category?.Description
+                CategoryId = p.Category?.Id,
+                CategoryName = p.Category?.Name,
+                CategoryIcon = p.Category?.Icon,
+                CategoryDescription = p.Category?.Description
             }
         });
-
+    
         // İşlemlerin tamamlandığına dair bir işareti döndür.
         return Ok(productsWithCategory);
     }
+
 }
