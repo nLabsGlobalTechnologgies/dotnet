@@ -1,0 +1,6 @@
+@newLinq_HostAddress = http://localhost:5120
+
+GET {{newLinq_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

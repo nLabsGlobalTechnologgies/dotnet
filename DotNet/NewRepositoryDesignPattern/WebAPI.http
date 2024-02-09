@@ -1,0 +1,6 @@
+@WebAPI = http://localhost:5008
+
+GET {{WebAPI}}/
+Accept: application/json
+
+###
